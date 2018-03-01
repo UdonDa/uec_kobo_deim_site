@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, dl, dd, figure, ol, ul, p, pre {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:active, a:focus,
+button:focus, input[type="button"] {
+  outline: none;
+}
+
+article, aside, details, figure, figcaption, footer, header, main, nav, section {
+  display: block;
+}
+
+address, em, i {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  vertical-align: top;
+}
+
+th, td {
+  padding: 0;
+}
+
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", "Osaka", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+/* block
+   ========================================================================== */
+#home {
+  height: 100%;
+  color: white;
+  padding: 30px;
+  background: #c4b273;
+}
+
+.block {
+  height: 100%;
+  color: white;
+  padding: 30px;
+}
+
+#gallery {
+  background: #5d8f88;
+}
+
+#detail {
+  background: #30322e;
+}
+
+#about {
+  background: #314d5b;
+}
+
+#contact {
+  background: #ff8c00;
+}
+
+/* scroll spy
+   ========================================================================== */
+#scrollspy {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#scrollspy li {
+  display: inline-block;
+}
+#scrollspy a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: #ccc;
+}
+#scrollspy a:hover, #scrollspy .active {
+  background: #666;
+}
+
+#scrollspy-side {
+  position: fixed;
+  top: 35%;
+  right: 30px;
+}
+#scrollspy-side li {
+  position: relative;
+  margin-bottom: 20px;
+}
+#scrollspy-side li:hover div {
+  display: block;
+}
+#scrollspy-side div {
+  width: 120px;
+  color: white;
+  text-align: center;
+  display: none;
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  padding: 10px 0;
+  background: #666;
+}
+#scrollspy-side a {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: #ccc;
+}
+#scrollspy-side a:hover, #scrollspy-side .active {
+  background: #666;
+}
