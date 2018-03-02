@@ -1,61 +1,230 @@
-﻿<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="jp">
 <head>
-<title>UEC</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/scrollspy.css">
-<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>UEC Ramen</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+	<link href="./assets/css/demo.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet">
+
 </head>
-
 <body>
-<section id="home" class="block">
-<h1>HOME</h1>
-<p>Conditional CycleGAN</p>
-</section>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="300">
+        <div class="container">
+			<div class="navbar-translate">
+				<a class="navbar-brand" href="http://mm.cs.uec.ac.jp/">UEC YANAI Lab</a>
+	            <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-bar"></span>
+					<span class="navbar-toggler-bar"></span>
+					<span class="navbar-toggler-bar"></span>
+	            </button>
+			</div>
+	        <div class="collapse navbar-collapse" id="navbarToggler">
+	            <ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+	                    <a href="#home" class="nav-link"><i class="nc-icon nc-layout-11"></i>HOME</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="#project" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>PROJECT</a>
+	                </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./en.html" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>ENGLISH</a>
+                    </li>
+	            </ul>
+	        </div>
+		</div>
+    </nav>
 
+		<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/deim2018_logo.jpg');" id="home">
+			<div class="filter"></div>
+			<div class="container">
+			    <div class="motto text-center">
+			        <h1>UEC 情報工学工房<br>まとめ</h1>
+			        <h3>DEIM 2018</h3>
+			        <br />
+			        <a href="hoge" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a>
+			    </div>
+			</div>
+    	</div>
+        <div class="main">
+			<div class="section text-center">
+            <div class="container">
+                <div class="row" id="project">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">Let's talk project</h2>
+                        <h5 class="description">我々は, 電気通信大学の情報工学工房という授業で, 1年間深層学習<br>をテーマに学習をし, そのアウトプットとして, deim2018に参加した.</h5>
+                        <br>
+                        <a href="http://pr.cei.uec.ac.jp/kobo2017/index.php?Tensorflow/Chainer%E3%81%AB%E3%82%88%E3%82%8B%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92" class="btn btn-danger btn-round">See Details</a>
+                        <br><br><br>
+                        <h5 class="description">Conditional GANによる食事写真の属性操作というテーマで<br>実行を行い, 従来のCycleGANでの以下3つの問題点を解決した</h5><br>
+                        <h5 class="description"> 1. 1:1でしか変換ができなかったのを, 1:nへの変換</h5>
+                        <h5 class="description"> 2. 形状を保ったまま変換</h5>
+                    </div>
+                </div>
+				<br/><br/>
+				<div class="row" id="gallery">
+					<div class="col-md-3">
+						<div class="info">
+                            <h2 class="title">Gallery</h2>
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-album-2"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">Ramen Museum</h4>
+								<p class="description">GANの実験で生成されたラーメンたち</p>
+								<a href="ramen-museum.html" target="_blank" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-bulb-63"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">Paper</h4>
+								<p>第10回データ工学と情報マネジメントに関するフォーラム （第16回日本データベース学会年次大会）に投稿した論文</p>
+								<a href="http://db-event.jpn.org/deim2018/" class="btn btn-link btn-danger">Coming soon...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-sun-fog-29"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">推しアニメ</h4>
+								<p>今期の推しアニメであるりゅうおうのおしごと!</p>
+								<a href="http://www.ryuoh-anime.com/" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-<section id="gallery" class="block">
-<h1>GALLERY</h1>
-<p>後でyoutube貼る</p>
-</section>
+            </div>
+        </div>
 
+		<div class="section section-dark text-center" id="about">
+            <div class="container">
+                <h2 class="title">Let's talk about us</h2>
+				<div class="row">
+    				<div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"><img src="./assets/img/faces/neno.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">成冨 志優</h4>
+                                        <h6 class="card-category">電気通信大学 情報理工学域Ⅰ類 メディア情報学プログラム</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    好きなものは脱ぎたてのストッキング
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                <a href="https://github.com/nenoNaninu" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-github"></i></a>
+                                <a href="http://neno-garden.com/blog/" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-home"></i></a>
+                            </div>
+                        </div>
+    				</div>
 
-<section id="detail" class="block">
-<h1>DETAIL</h1>
-<p>説明、論文のurlはっとく</p>
-</section>
+    				<div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"><img src="./assets/img/faces/udon.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">堀田 大地</h4>
+                                        <h6 class="card-category">電気通信大学 情報理工学域Ⅲ類 機械システムプログラム</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    大好きなのはひまわりの種
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://twitter.com/" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                <a href="https://github.com/UdonDa" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-github"></i></a>
+                                <a href="https://www.facebook.com/daichi0727" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-home"></i></a>
+                            </div>
+                        </div>
+    				</div>
 
-<section id="about" class="block">
-<h1>ABOUT</h1>
-<p>工房について？適当に</p>
-</section>
+    				<div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"><img src="./assets/img/faces/negi.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">丹野 良介</h4>
+                                        <h6 class="card-category">電気通信大学 大学院情報理工学研究科 情報学専攻</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    大好きなのは二日酔い
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://twitter.com/negi111111" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                <a href="https://github.com/negi111111" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-github"></i></a>
+                                <a href="https://negi111111.github.io/" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-home"></i></a>
+                            </div>
+                        </div>
+    				</div>
+    			</div>
+        	</div>
+    	</div>
 
-
-<section id="contact" class="block">
-<h1>CONTACT</h1>
-<p>成冨</p>
-<p>堀田大地</p>
-<p>丹野</p>
-<p>柳生研究室</p>
-</section>
-
-<nav id="scrollspy">
-<ul>
-	<li><a href="#home">HOME</a></li><!--
-	 --><li><a href="#gallery">GALLERY</a></li><!--
-	 --><li><a href="#detail">DETAIL</a></li><!--
-	 --><li><a href="#about">ABOUT</a></li><!--
-	 --><li><a href="#contact">CONTACT</a></li>
-</ul>
-<!-- /#scrollspy --></nav>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
-<script src="js/scrollspy.js"></script>
+            <div class="section landing-section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <h2 class="text-center">Contact</h2><br><br><br>
+                            <a href="https://goo.gl/forms/CTOmoYK2D5VrUEQ93" class="btn btn-danger btn-round message">Send message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
+<!-- Core JS Files -->
+<script src="./assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="./assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="./assets/js/popper.js" type="text/javascript"></script>
+<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Paper Kit Initialization snd functons -->
+<script src="./assets/js/paper-kit.js?v=2.1.0"></script>
+
 </html>
